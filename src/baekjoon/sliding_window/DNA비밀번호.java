@@ -1,4 +1,4 @@
-package programmers.sliding_window;
+package baekjoon.sliding_window;
 
 import java.io.BufferedReader;
 import java.io.IOException;
