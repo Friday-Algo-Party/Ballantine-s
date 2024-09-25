@@ -1,4 +1,4 @@
-package programmers;
+package programmers.Lv2;
 
 // N개의 최소공배수, Programmers(Level 2)
 public class N개의최소공배수 {
