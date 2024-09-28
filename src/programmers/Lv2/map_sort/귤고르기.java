@@ -1,4 +1,4 @@
-package programmers.Lv2;
+package programmers.Lv2.map_sort;
 
 import java.util.*;
 
