@@ -31,3 +31,5 @@ bin/
 # .gitignore 파일
 *.idea
 *.iml
+
+/src/codingtest
