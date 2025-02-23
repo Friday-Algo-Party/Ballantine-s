@@ -3,8 +3,8 @@ package baekjoon.graph;
 import java.io.*;
 import java.util.*;
 
-// 숨박꼭질(graph), 실버 I
-public class 숨박꼭질 {
+// 숨바꼭질(graph), 실버 I
+public class 숨바꼭질 {
     static int N;
     static int K;
     static int[] visited = new int[100001];
