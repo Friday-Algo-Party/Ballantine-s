@@ -23,27 +23,27 @@ public class 숨바꼭질3 {
     }
 
     static void bfs(int N, int K) {
-        Deque<Integer> deque = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
         Arrays.fill(visited, -1);
-        deque.add(N);
+        queue.add(N);
         visited[N] = 0;
 
-        while (!deque.isEmpty()) {
-            int now = deque.poll();
+        while (!queue.isEmpty()) {
+            int now = queue.poll();
 
             if (now * 2 <= 100000 && visited[now * 2] == -1) {
                 visited[now * 2] = visited[now];
-                deque.addFirst(now * 2);
+                queue.add(now * 2);
             }
 
             if (now - 1 >= 0 && visited[now - 1] == -1) {
                 visited[now - 1] = visited[now] + 1;
-                deque.addLast(now - 1);
+                queue.add(now - 1);
             }
 
             if (now + 1 <= 100000 && visited[now + 1] == -1) {
                 visited[now + 1] = visited[now] + 1;
-                deque.addLast(now + 1);
+                queue.add(now + 1);
             }
         }
         System.out.println(visited[K]);
