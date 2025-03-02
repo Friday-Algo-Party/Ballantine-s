@@ -49,7 +49,7 @@ public class 파티 {
     }
 
     public static int[] dijkstra(List<int[]>[] graph, int start) {
-        PriorityQueue<int[]> pq = new PriorityQueue<>((o1, o2) -> o1[1] - o2[1]);
+        PriorityQueue<int[]> pq = new PriorityQueue<>(Comparator.comparingInt(o -> o[1]));
         int[] dist = new int[N + 1];
         Arrays.fill(dist, INF);
         dist[start] = 0;
